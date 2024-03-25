@@ -20,7 +20,7 @@ int pengurangan(int bil_1, int bil_2) {
 	return bil_1 - bil_2;
 }
 
-int pengkalian(int bil_1, int bil_2) {
+int perkalian(int bil_1, int bil_2) {
 	return bil_1 * bil_2;
 }
 
@@ -42,7 +42,42 @@ int main()
 		cout << "5. keluar" << endl;
 		cout << "masukkan menu yang ingin di pilih (1/2/3/4/5)";
 		cin >> pilihan;
-	}
+
+		switch (pilihan)
+		{
+		case 1:
+			input();
+			cout << "hasil penjumlahan = " << penjumlahan(a, b) << endl;
+			system("pause");
+			break;
+		case 2:
+			input();
+			cout << "hasil pengurangan = " << pengurangan(a, b) << endl;
+			system("pause");
+			break;
+		case 3:
+			input();
+			cout << "hasil perkalian = " << perkalian(a, b) << endl;
+			system("pause");
+			break;
+		case 4:
+			input();
+			cout << "hasil pembagian = " << pembagian(a, b) << endl;
+			system("pause");
+			break;
+		case 5:
+			break;
+		default:
+			cout << "menu tidak tersedia silahkan pilih lagi" << endl;
+			break;
+
+
+		}
+
+	} while (pilihan != 5);
+
 }
+
+
 
 
